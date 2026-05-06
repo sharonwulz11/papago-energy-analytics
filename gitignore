@@ -1,0 +1,66 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_meta
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Project-specific
+# Don't commit rendered preview images (regenerate from PDFs)
+report/page-*.jpg
+report/page-*.png
+docs/slide-*.jpg
+docs/slide-*.png
+docs/thumbnails-*.jpg
+
+# Don't commit local pdf renders of the deck (regenerate via soffice)
+docs/Papago_Energy_Analytics_Presentation.pdf
+
+# Coverage
+htmlcov/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+
+# Logs
+*.log

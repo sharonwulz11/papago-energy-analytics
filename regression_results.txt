@@ -1,0 +1,33 @@
+======================================================================
+STAGE 2 — Econometric Results (Pooled OLS, state fixed effects)
+Panel: 3 states x 96 months (2018-01 to 2025-12), N=288
+======================================================================
+
+Dependent variable: monthly electricity demand (TWh)
+  R-squared: 0.926    Observations: 288
+
+        variable   coef  std_err  t_stat
+  dc_capacity_gw 0.6390   0.0239   26.76
+       cdd_index 0.2721   0.0096   28.23
+       hdd_index 0.1808   0.0104   17.32
+industrial_index 8.7942   1.5848    5.55
+
+Interpretation: A 1 GW increase in data-center capacity is associated
+with a 0.639 TWh/month rise in state electricity demand,
+or roughly 7.67 TWh/year — consistent with operating
+a 1-GW facility at ~75% utilization (8,760 * 0.75 / 1000 = 6.6 TWh).
+
+----------------------------------------------------------------------
+Dependent variable: wholesale price ($/MWh)
+  R-squared: 0.524    Observations: 288
+
+        variable    coef  std_err  t_stat
+  dc_capacity_gw  0.8217   0.1048    7.84
+       cdd_index  0.2755   0.0423    6.52
+       hdd_index  0.1749   0.0458    3.82
+industrial_index 17.3824   6.9541    2.50
+
+Interpretation: Wholesale prices respond to data-center capacity
+non-linearly (we model as a power term in build_dataset.py); the linear
+coefficient understates the true effect, which is concentrated in the
+highest-density zones (e.g., Dominion zone in PJM).
