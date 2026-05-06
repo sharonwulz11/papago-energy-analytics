@@ -45,7 +45,7 @@ Each lever alone cuts ~20% of cumulative emissions vs BAU. Both combined would b
 
 ```bash
 # Clone
-git clone https://github.com/sharonwu/papago-energy-analytics.git
+git clone https://github.com/sharonwulz11/papago-energy-analytics.git
 cd papago-energy-analytics
 
 # Install dependencies
