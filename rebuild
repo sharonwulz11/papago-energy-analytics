@@ -2,6 +2,12 @@ git remote add origin https://github.com/YOUR_USERNAME/papago-energy-analytics.g
 git branch -M main
 git push -u origin main
 
-
+git add README.md report/
+git commit -m "Update repo URL in README and report"
+git push
 
 python report/build_report.py
+
+
+git tag -a v1.0 -m "Project report submission"
+git push origin v1.0
